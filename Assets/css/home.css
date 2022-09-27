@@ -1,0 +1,173 @@
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    background: #DCDCDC;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.text-small {
+    font-size: 85%;
+}
+
+.bi {
+    vertical-align: -.125em;
+    pointer-events: none;
+    fill: currentColor;
+}
+
+.dropdown-toggle {
+    outline: 0;
+}
+
+.nav-flush .nav-link {
+    border-radius: 0;
+}
+
+.btn-toggle {
+    display: inline-flex;
+    align-items: center;
+    padding: .25rem .5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .65);
+    background-color: transparent;
+    border: 0;
+}
+
+.btn-toggle:hover,
+.btn-toggle:focus {
+    color: rgba(0, 0, 0, .85);
+    background-color: #d2f4ea;
+}
+
+.btn-toggle::before {
+    width: 1.25em;
+    line-height: 0;
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    transition: transform .35s ease;
+    transform-origin: .5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"] {
+    color: rgba(0, 0, 0, .85);
+}
+
+.btn-toggle[aria-expanded="true"]::before {
+    transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+    display: inline-flex;
+    padding: .1875rem .5rem;
+    margin-top: .125rem;
+    margin-left: 1.25rem;
+    text-decoration: none;
+}
+
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+    background-color: #d2f4ea;
+}
+
+.scrollarea {
+    overflow-y: auto;
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
+
+.lh-tight {
+    line-height: 1.25;
+}
+
+
+/* #info {
+     width: 300px; 
+
+height: 100% !important;
+
+}
+*/
+
+.card-box {
+    padding: 20px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+.file-man-box {
+    padding: 20px;
+    border: 1px solid #e3eaef;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 20px
+}
+
+.file-man-box .file-close {
+    color: #f1556c;
+    position: absolute;
+    line-height: 24px;
+    font-size: 24px;
+    right: 10px;
+    top: 10px;
+    visibility: hidden
+}
+
+.file-man-box .file-img-box {
+    line-height: 120px;
+    text-align: center
+}
+
+.file-man-box .file-img-box img {
+    height: 64px
+}
+
+.file-man-box .file-download {
+    font-size: 32px;
+    color: #98a6ad;
+    position: absolute;
+    right: 10px
+}
+
+.file-man-box .file-download:hover {
+    color: #313a46
+}
+
+.file-man-box .file-man-title {
+    padding-right: 25px
+}
+
+.file-man-box:hover {
+    -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, .06), 0 1px 0 0 rgba(0, 0, 0, .02);
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, .06), 0 1px 0 0 rgba(0, 0, 0, .02)
+}
+
+.file-man-box:hover .file-close {
+    visibility: visible
+}
+
+.text-overflow {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+h5 {
+    font-size: 15px;
+}
